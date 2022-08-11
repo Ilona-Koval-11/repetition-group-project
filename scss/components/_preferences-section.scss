@@ -1,4 +1,4 @@
- .preferences-section {
+ .products-section {
      padding-top: 94px;
      padding-bottom: 0;
 
@@ -47,7 +47,7 @@
 
  }
 
- .preferences-section--visually-hidden {
+ .products-section--titled {
      position: absolute;
      width: 1px;
      height: 1px;
@@ -58,7 +58,7 @@
      clip: rect(0 0 0 0);
  }
 
- .preferences-section__menu--titled {
+ .products-section__menu--titled {
      font-weight: 700;
      font-size: 14px;
      line-height: 1.14;
@@ -68,11 +68,11 @@
      margin-bottom: 10px;
  }
 
- .preferences-section__menu--titled:last-child {
+ .products-section__menu--titled:last-child {
      margin-right: 0;
  }
 
- .preferences-section__menu--informed {
+ .products-section__menu--informed {
     
      font-weight: 400;
      font-size: 16px;
@@ -80,7 +80,7 @@
      color: var(--item-color);
  }
 
- .preferences-section__menu--itemed {
+ .products-section__menu--itemed {
      margin-right: 30px;
      /*width: 270px;*/
      max-height: 224px;
@@ -113,14 +113,14 @@
 
 
 
- .preferences-section__menu--itemed:last-child {
+ .products-section__menu--itemed:last-child {
     @media screen and (min-width:1200px){
        margin-right: 0; 
     }
      
  }
 
- .preferences-section__menu--itemed::before {
+ .products-section__menu--itemed::before {
      display: block;
      content: '';
      height: 120px;
@@ -131,8 +131,8 @@
      background-color: var(--gradient-background-color);
  }
 
- .preferences-section__menu--itemed:nth-child(1)::before {
-     background-image: url(../images/icons/Group1.svg);
+ .products-section__menu--itemed:nth-child(1)::before {
+     background-image: url(./images/ice-cream_mobile@2x.png);
     @media screen and (max-width: 479px) {
         width: 100%;
     }
@@ -149,7 +149,7 @@
      
  }
 
- .preferences-section__menu--itemed:nth-child(2)::before {
+ .products-section__menu--itemed:nth-child(2)::before {
      background-image: url(../images/icons/Group2.svg);
     @media screen and (max-width: 479px) {
             width: 100%;
@@ -169,7 +169,7 @@
         }
  }
 
- .preferences-section__menu--itemed:nth-child(3)::before {
+ .products-section__menu--itemed:nth-child(3)::before {
      background-image: url(../images/icons/Group3.svg);
     @media screen and (max-width: 479px) {
             width: 100%;
@@ -189,7 +189,7 @@
      
  }
 
- .preferences-section__menu--itemed:nth-child(4)::before {
+ .products-section__menu--itemed:nth-child(4)::before {
      background-image: url(../images/icons/Group4.svg);
      @media screen and (max-width: 479px) {
       width: 100%;
@@ -208,3 +208,14 @@
   }
  }
   
+ .products-section--titled-labled{
+    @media screen and (max-width:320px) {
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.166;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+    }
+ }
